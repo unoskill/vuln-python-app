@@ -1,0 +1,10 @@
+# Intentionally vulnerable — DO NOT deploy.
+import requests
+from PIL import Image
+
+def main():
+    resp = requests.get("https://example.com")
+    print(resp.status_code)
+
+if __name__ == "__main__":
+    main()
